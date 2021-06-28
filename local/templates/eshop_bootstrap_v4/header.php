@@ -18,6 +18,10 @@ if (isset($_GET["theme"]) && in_array($_GET["theme"], array("blue", "green", "ye
 $theme = COption::GetOptionString("main", "wizard_eshop_bootstrap_theme_id", "green", SITE_ID);
 
 $curPage = $APPLICATION->GetCurPage(true);
+
+$asset = Asset::getInstance();
+$asset->addJs(SITE_TEMPLATE_PATH . '/js/main.js');
+$asset->addCss(SITE_TEMPLATE_PATH . '/css/popup.css');
 ?>
 <!DOCTYPE html>
 <html xml:lang="<?= LANGUAGE_ID ?>" lang="<?= LANGUAGE_ID ?>">
