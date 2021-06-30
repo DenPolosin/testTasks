@@ -10,7 +10,7 @@ global $USER, $APPLICATION;
 
 $request = Context::getCurrent()->getRequest();
 $postList = $request->getPostList()->getValues();
-if ((isset($postList['AJAX']) && $postList['AJAX'] !== 'Y') || !$request->isPost()) {
+if (!isset($postList['AJAX']) || $postList['AJAX'] !== 'Y' || !$request->isPost()) {
     CHTTP::SetStatus('404 Not Found');
     @define('ERROR_404', 'Y');
 }

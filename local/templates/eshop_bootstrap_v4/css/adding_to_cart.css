@@ -1,0 +1,64 @@
+.atc_block {
+    display: flex;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.atc_product-info {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.atc_input_container {
+    flex: 1 1 250px;
+    padding: 10px 5px;
+}
+
+.atc_input_container input {
+    width: 100%;
+}
+
+.atc_block.atc_block_head {
+    border-bottom: 4px double #c4c4c4;
+    text-align: center;
+    font-weight: bold;
+}
+
+div#atc_container {
+    margin-bottom: 50px;
+}
+
+.atc_delete_row {
+    flex-basis: 170px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.atc_add_row_button {
+    margin: 10px auto;
+    padding: 6px 50px;
+}
+
+.atc_add-to-cart {
+    text-align: right;
+    margin: 0 0 10px;
+}
+
+.atc_image {
+    float: left;
+    margin: 0 10px 5px 0;
+    border: 1px dotted #c4c4c4;
+}
+
+.atc_info p.atc_product-name {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.atc_info p {
+    margin-bottom: 0;
+}
+
+.atc_error {
+    text-align: center;
+    color: red;
+}
